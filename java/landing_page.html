@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <style>
+    /* Add some styles to the page */
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+  margin: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+}
+
+.btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Landing Page</h1>
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="product.jpg" alt="product image">
+      <h2>Introducing My Product</h2>
+      <p>Learn more about my product and how it can benefit you.</p>
+    </div>
+    <div class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Feature 1</li>
+        <li>Feature 2</li>
+        <li>Feature 3</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Testimonials</h2>
+      <div id="testimonials"></div>
+    </div>
+    <a href="#" class="btn" onclick="openModal()">Learn More</a>
+  </div>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>My Product</h2>
+      <p>Learn more about my product and how it can benefit you.</p>
+    </div>
+  </div>
+</body>
+</html>
