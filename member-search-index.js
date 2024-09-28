@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"pkg1","c":"classA","l":"classA(int)","u":"%3Cinit%3E(int)"},{"p":"pkg1","c":"classA","l":"disp()"}];updateSearchResults();
